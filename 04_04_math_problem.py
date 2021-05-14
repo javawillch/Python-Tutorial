@@ -13,9 +13,9 @@ def cutbar(m, n, current):
     else:
         return 1 + cutbar(m, n, current+m)
     
-
 print(cutbar(3, 20, 1))
-
+###################################################
+## 此遞迴為「深度優先搜尋」又稱BackTrack; 優點：比較節省記憶體，但比較沒有效率
 def cuttbar(knife, total_length):
     count = 0 
     current_num = 1
@@ -24,6 +24,4 @@ def cuttbar(knife, total_length):
         count = count + 1
     return count
 
-
- 
 print(cuttbar(3, 20))   
